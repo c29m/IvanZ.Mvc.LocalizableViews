@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IvanZ.Mvc.LocalizableViews", "IvanZ.Mvc.LocalizableViews\IvanZ.Mvc.LocalizableViews.csproj", "{9415D09C-7BF1-4CF2-A14E-171D8CC93921}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo", "Demo\Demo.csproj", "{8C78D770-9986-43B3-B39F-1CA43A36B7D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IvanZ.Mvc.LocalizableViews.Tests", "IvanZ.Mvc.LocalizableViews.Tests\IvanZ.Mvc.LocalizableViews.Tests.csproj", "{004E7166-0CBC-4F24-A7DF-270A40D9886B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9415D09C-7BF1-4CF2-A14E-171D8CC93921}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9415D09C-7BF1-4CF2-A14E-171D8CC93921}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9415D09C-7BF1-4CF2-A14E-171D8CC93921}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9415D09C-7BF1-4CF2-A14E-171D8CC93921}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C78D770-9986-43B3-B39F-1CA43A36B7D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C78D770-9986-43B3-B39F-1CA43A36B7D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C78D770-9986-43B3-B39F-1CA43A36B7D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C78D770-9986-43B3-B39F-1CA43A36B7D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{004E7166-0CBC-4F24-A7DF-270A40D9886B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{004E7166-0CBC-4F24-A7DF-270A40D9886B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{004E7166-0CBC-4F24-A7DF-270A40D9886B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{004E7166-0CBC-4F24-A7DF-270A40D9886B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,6 @@
+*.csproj.user
+*/bin
+*/obj
+*.suo
+TestResults/
+*.swp
