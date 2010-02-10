@@ -19,6 +19,7 @@ namespace IvanZ.Mvc.LocalizableViews
 			FallbackCulture = CultureInfo.InvariantCulture.Name;
 			CookieName = "culture";
 			RouteParameterName = "culture";
+			HttpCultureDetectionEnabled = true;
 		}
 
 		public const string VaryByCustomKey = "culture";
@@ -37,6 +38,12 @@ namespace IvanZ.Mvc.LocalizableViews
 		/// The name of the cookie file to store the current culture name. The default to "language".
 		/// </summary>
 		public static string CookieName { get; set; }
+
+		/// <summary>
+		/// Sets whether the culture set in the user's web browser should be taken into account or not.
+		/// The default is true.
+		/// </summary>
+		public static bool HttpCultureDetectionEnabled { get; set; }
 
 		/// <summary>
 		/// The route parameter name which contains the culture name. The default is "culture"
@@ -77,7 +84,7 @@ namespace IvanZ.Mvc.LocalizableViews
 			}
 
 			// Try 3: "Accept-Language" HTTP Header
-			if (!String.IsNullOrEmpty (request.Headers["Accept-Language"])) {
+			if (HttpCultureDetectionEnabled && !String.IsNullOrEmpty (request.Headers["Accept-Language"])) {
 				string languagesHeader = request.Headers["Accept-Language"];
 				// does not support q=x.xx ranking
 				languagesHeader = _acceptLanuageStripQExpression.Replace (languagesHeader, String.Empty);

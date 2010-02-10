@@ -98,6 +98,17 @@ namespace IvanZ.Mvc.LocalizableViews.Tests
 		}
 
 		[TestMethod]
+		public void Detect_Culture_From_HttpHeader_Disabled ()
+		{
+			LocalizationConfig.HttpCultureDetectionEnabled = false;
+			HttpContextBase httpContext = MockHelper.CreateHttpContext ();
+			httpContext.Request.Headers.Add ("Accept-Language", " bg");
+			Assert.AreEqual (LocalizationConfig.GetCultureFromName ("en"), 
+					 LocalizationConfig.GetRequestCulture (httpContext.Request, null));
+			LocalizationConfig.HttpCultureDetectionEnabled = true;
+		}
+
+		[TestMethod]
 		public void Detect_Fallback()
 		{
 			HttpContextBase httpContext = MockHelper.CreateHttpContext ();
